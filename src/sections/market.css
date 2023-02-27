@@ -1,0 +1,93 @@
+.salesGridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 50px 30px 30px 30px;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+.salesDiv {
+  /* background-color: #fff; */
+  width: 200px;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all linear 0.5s;
+}
+.salesImgDiv {
+  background-color: #fff;
+  border-radius: 100%;
+  width: 165px;
+  height: 165px;
+  transition: all linear 0.5s;
+}
+.salesImg {
+  width: 160px;
+  height: auto;
+  transition: all linear 0.5s;
+}
+.salesTitle {
+  font-size: large;
+  transition: all linear 2s;
+}
+.salesDescription {
+  text-overflow: ellipsis;
+  display: none;
+  transition: all linear 2s;
+}
+
+.salesDiv:hover {
+  background: #fff;
+  height: 200px;
+}
+.salesDiv:hover .salesImgDiv {
+  background: transparent;
+}
+.salesDiv:hover .salesImg {
+  width: 80px;
+}
+.salesDiv:hover .salesTitle {
+  display: none;
+}
+.salesDiv:hover .salesDescription {
+  display: block;
+}
+.bttn {
+  text-align: center;
+}
+.try {
+  height: 40px;
+  width: 150px;
+  margin-right: 70px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 213, 0.9557072829131653) 100%,
+    rgba(208, 210, 216, 0.051) 0%
+  );
+  color: white;
+}
+.try:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 213, 0.9557072829131653) 10%,
+    rgba(6, 42, 149, 0.58) 50%
+  );
+}
+.better {
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border-color: rgba(33, 33, 213, 0.9557072829131653);
+  color: blue;
+}
+.better:hover {
+  color: #fff;
+  background-color: rgba(33, 33, 213, 0.9557072829131653);
+}
